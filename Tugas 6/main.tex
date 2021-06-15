@@ -13,11 +13,11 @@
 
 \title{Analisis performa algoritma}
 
-\author{\IEEEauthorblockN{Johanes Wilian Ang, mahasiswa2, mahasiswa3}
+\author{\IEEEauthorblockN{Johanes Wilian Ang, mahasiswa2, mahasiswa}
 \IEEEauthorblockA{\textit{Fakultas Teknologi Informasi} \\
 \textit{Institut Teknologi Batam}\\
 Batam, Indonesia \\
-johanwilian455@gmail.com, emial, email}
+johanwilian455@gmail.com,}
 }
 
 \maketitle
@@ -25,11 +25,6 @@ johanwilian455@gmail.com, emial, email}
 \begin{abstract}
 Pada era transformasi digital, keamanan jaringan menjadi semakin penting dan menarik untuk dikaji. Sistem deteksi intrusi (IDS) merupakan bagian integral dari keamanan jaringan. Untuk meningkatkan keamanan jaringan, algoritma pembelajaran mesin dapat diterapkan untuk mendeteksi dan mencegah serangan jaringan. Pemanfaatan kumpulan data (dataset) seperti NSL-KDD, menjadi salah satu pendekatan untuk melatih model guna mendeteksi berbagai serangan jaringan. Pada pekerjaan ini mahasiswa diharapkan dapat membandingkan performa dari beberapa algoritma yaitu Random Forest, K-Neighbors, SVM dan Ensemble Learning. Algoritma Random Forest, K-Neighbors, SVM dan Ensemble Learning dari masing-masing algoritma tersebut memiliki cara klasifikasi yang berbeda, di sini kami akan membandingkan kinerja masing-masing algoritma.
 \end{abstract}
-
-\begin{IEEEkeywords}
-intrusion detection, Random Forest, NSL-KDD dataset.
-\end{IEEEkeywords}
-
 
 %bagian dari Pendahuluan
 \section{Pendahuluan}
@@ -44,21 +39,22 @@ Berdasarkan data yang dirilis oleh Symantec pada Internet Security Threat Report
 \begin{figure}
 \centering
 \includegraphics[width=.4\textwidth]{picture/Gambar 1.1.PNG}
-\caption{Peringkat Ancaman Kejahatan Siber di Dunia}
+\caption{Gambar 1.1 Peringkat Ancaman Kejahatan Siber di Dunia (Top Ten)}
 \end{figure}
 
 Namun pada tahun 2020 BSSN menyebutkan serangan siber di Indonesia meningkat hingga 6 kali lipat dari tahun 2019
 
-\begin{center}
+\begin{figure}
+\centering
 \includegraphics[width=.4\textwidth]{picture/Gambar 1.2.PNG}
-
-\end{center}
+\caption{Gambar 1.1 Data jumlah serangan siber pada tahun 2020}
+\end{figure}
 
 
 
 
 %bagian dari Bab 2 penjelasan
-\section{Related Work}
+\section{Penjelasan}
 %bagian A. Keamanan Komputer
 \subsection{Keamanan Komputer}
 Arti dari keamanan komputer telah berubah dalam beberapa tahun terakhir. Sebelum masalah keamanan data/informasi menjadi populer, kebanyakan orang berpikir bahwa keamanan komputer difokuskan pada alat alat komputer secara fisik. Secara tradisional, fasilitas komputer secara fisik dilindungi karena tiga alasan:
@@ -91,16 +87,19 @@ Dalam keamanan komputer ada tiga komponen yang selalu menjadi diskusi:
 \subsection{Intrusion Detection System (IDS)}
 merupakan sistem untuk mendeteksi adanya “intrusion” yang dilakukan oleh “intruder” atau “pengganggu atau penyusup” di jaringan. IDS (Intrusion Detection System) sangat mirip seperti alarm, yaitu IDS (Instrusion Detection System) akan memperingati bila terjadinya atau adanya penyusupan pada jaringan. IDS (Intrusion Detection System) dapat didefinisikan sebagai kegiatan yang bersifat anomaly, incorrect, inappropriate yang terjadi di jaringan atau host. IDS (Intrusion Detection System) adalah sistem keamanan yang bekerja bersama Firewall untuk mengatasi Intrusion.
 
-\begin{center}
+\begin{figure}
+\centering
 \includegraphics[width=.4\textwidth]{picture/Gambar 2.2.1.PNG}
-
-\end{center}
+\caption{Gambar 2.2.1 Taksonomi IDS}
+\end{figure}
 
 Taksonomi pada IDS dibagi menjadi lima bagian. Setiap bagian tersebut haru diperhitungkan berdasarkan tujua penggunaannya dan keuntungan kerugianny Kelima hal tersebut adalah lokasi, fungs penyebarannya, waktu pendeteksiannya da mekanisme pendeteksiannya (Pharate, dkk., 2015). Gambar 2.2.1 menjelaskan tentang taksonomi dari IDS.
 
-\begin{center}
+\begin{figure}
+\centering
 \includegraphics[width=.4\textwidth]{picture/Gambar 2.2.2.PNG}
-\end{center}
+\caption{Gambar 2.2.2 Tahapan membangun IDS}
+\end{figure}
 
 Untuk membangun IDS setidaknya diperlukan 5 (lima) tahapan yaitu Data Collection, Data Preprocessing, Intrusion Recognition, Reporting dan Respone. IDS () juga memiliki cara kerja dalam menganalisa apakah paket data yang dianggap sebagai intrusion oleh intruser. Cara kerja IDS () dibagi menjadi dua, yaitu :
 
@@ -131,9 +130,11 @@ Pada perkembangan teknologi saat ini, proses pengumpulan data serta penyimpanann
     \item Machine Learning juga dapat digunakan untuk mendeteksi serangan pada jaringan (J. dan Muthukumar, 2015). Pengembangan terhadap penggunaan machine learning telah dikembangkan untuk mengetahui algoritma yang terbaik untuk detect ion engine pada IDS Tabel 1 menunjukkan perbandingan performa antar algoritma yang diimplementasikan pada IDS .
 \end{itemize}
 
-\begin{center}
+\begin{figure}
+\centering
 \includegraphics[width=.4\textwidth]{picture/Gambar 2.4.1.PNG}
-\end{center}
+\caption{Gambar 2.4.1 Akurasi algoritma mechine learning}
+\end{figure}
 
 \section{Metodologi}
 \subsection{Random Forest}
@@ -163,9 +164,11 @@ Algoritma K-Nearest Neighbor (K-NN) adalah sebuah metode klasifikasi terhadap se
 \subsection{Structural Risk Minimization (SVM)}
 SVM digunakan untuk mencari hyperplane terbaik dengan memaksimalkan jarak antar kelas. Hyperplane adalah sebuah fungsi yang dapat digunakan untuk pemisah antar kelas. Dalam 2-D fungsi yang digunakan untuk klasifikasi antar kelas disebut sebagai line whereas, fungsi yang digunakan untuk klasifikasi antas kelas dalam 3-D disebut plane similarly, sedangan fungsi yang digunakan untuk klasifikasi di dalam ruang kelas dimensi yang lebih tinggi di sebut hyperplane.
 
-\begin{center}
+\begin{figure}
+\centering
 \includegraphics[width=.4\textwidth]{picture/Gambar 3.3.1.png}
-\end{center}
+\caption{Gambar 3.3.1 Hyperplane yang memisahkan dua kelas positif (+1) dan negatif(-1)}
+\end{figure}
 
 Hyperplane yang ditemukan SVM diilustrasikan seperti Gambar 1 posisinya berada ditengah-tengah antara dua kelas, artinya jarak antara hyperplane dengan objek-objek data berbeda dengan kelas yang berdekatan (terluar) yang diberi tanda bulat kosong dan positif. Dalam SVM objek data terluar yang paling dekat dengan hyperplane disebut support vector. Objek yang disebut support vector paling sulit diklasifikasikan dikarenakan posisi yang hampir tumpang tindih (overlap) dengan kelas lain. Mengingat sifatnya yang kritis, hanya support vector inilah yang diperhitungkan untuk menemukan hyperplane yang paling optimal oleh SVM.
 
@@ -176,23 +179,26 @@ Kemampuan pendekatan ensemble ini tidak hanya tertuang pada berbagai paper ilmia
 
 Berdasarkan apa yang berkembang saat ini, pendekatan ensemble dalam pemodelan prediktif menjadi pilihan tepat bagi mereka yang berupaya memperoleh prediksi yang memuaskan dengan cara yang sangat mudah untuk dikerjakan.  Hal senada juga telah dikemukanan oleh Mu Zhu (University of Waterloo) pada jurnal The American Statistician pada tahun 2008.
 
-\section{Result and Discussion}
-\subsection{Result}
-Random Forest merupakan salah satu metode yang digunakan untuk
 
-\subsection{Performa}
-Random Forest merupakan salah satu metode yang digunakan untuk
-
-\subsection{Random Forest}
-Random Forest merupakan salah satu metode yang digunakan untuk
-
-
-\section{Kesimpulan}
+\subsection{Kesimpulan}
 Pada saat keamanan komputer sangat penting. salah satu cara meningkatkan keamanan komputer adalah kita menggunakan IDS. Ada beberapa algoritma yang dapat digunakan, masing-masing algoritama memiliki kelebihan dan kekurangan.
 Dengan tersebut keamanan komputer akan terus terjaga.
 
-\bibliographystyle{IEEEtran}
+\bibliographystyle{./bibliography/IEEEtran}
 \bibliography{bibliography.bib}
 
+\vspace{12pt}
+\textcolor{red}{to cite this page :} Dicoding. 2020. Apa itu Client Server? Pengertian dan Fungsinya. Diakses pada 12 April 2021, dari https://www.dicoding.com/blog/client-server-adalah/
 
+\textcolor{red}{to cite this page :} Salsabila, Putri Zakia. 2020. Kejahatan Siber di Indonesia Naik 4 Kali Lipat di Masa Pandemi. Diakses pada diakses pada 25 May 2021, dari https://tekno.kompas.com/read/2020/10/12/07020007/kejahatan-siber-di-indonesia-naik-4-kali-lipat-selama-pandemi
+
+\textcolor{red}{to cite this page :} STIS. 2019. METODE RANDOM FOREST. Diakses pada 24 May 2021, dari http://forkas.stis.ac.id/2019/04/metode-random-forest.html
+
+\textcolor{red}{to cite this page :} INFORMATIKALOGI. 2017. Algoritma K-Nearest Neighbor (K-NN). Diakses pada 24 May 2021, dari https://informatikalogi.com/algoritma-k-nn-k-nearest-neighbor/
+
+\textcolor{red}{to cite this page :} Samsudiney. 2019. Penjelasan Sederhana tentang Apa Itu SVM?. Diakses pada 24 May 2021, dari https://medium.com/@samsudiney/penjelasan-sederhana-tentang-apa-itu-svm-149fec72bd02
+
+\textcolor{red}{to cite this page :} Jejaring. 2019. Pengertian dan Jenis Intrusion detection System (IDS). Diakses pada 24 May 2021, dari https://www.jejaring.web.id/pengertian-dan-jenis-intrusion-detection-system-ids/
+
+\textcolor{red}{to cite this page :} Soewito, Benfano. 2019. Keamaan Komputer. Diakses pada 24 May 2021 ,dari https://mti.binus.ac.id/2019/02/15/keamanan-komputer/
 \end{document}
